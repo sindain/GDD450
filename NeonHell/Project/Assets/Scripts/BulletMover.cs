@@ -8,9 +8,20 @@ public class BulletMover : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		player = GameObject.FindWithTag ("Player");
-		transform.forward = player.transform.forward;
+		transform.forward = GameObject.FindWithTag("ShotSpawn").transform.forward;
 		rotator = GameObject.FindWithTag ("GameController");
 		transform.parent = rotator.transform;
 		GetComponent<Rigidbody>().velocity = transform.forward * speed;
+	}
+	void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.tag == "Enemy"||other.gameObject.tag == "Finish") 
+		{
+			Destroy(other.gameObject);
+			if (other.gameObject.tag == "Enemy")
+			{
+				Destroy(gameObject);
+			}
+		}
 	}
 }
