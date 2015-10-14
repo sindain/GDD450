@@ -1,0 +1,7 @@
+NeonHell/Project/Library
+NeonHell/Project/ProjectSettings
+NeonHell/Project/Prototype_Data
+NeonHell/Project/*.sln
+NeonHell/Project/*.userprefs
+NeonHell/Project/*.csproj
+NeonHell/Project/Temp
