@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StartButtonScript : MonoBehaviour {
+public class RestartButtonScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +15,6 @@ public class StartButtonScript : MonoBehaviour {
 	public void Transition(){
 		UIHandler.lose=false;
 		Time.timeScale =1;
-		Application.LoadLevel ("Game");
+		Application.LoadLevel(Application.loadedLevel);
 	}
 }
