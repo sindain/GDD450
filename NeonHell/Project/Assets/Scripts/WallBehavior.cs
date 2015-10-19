@@ -20,6 +20,7 @@ public class WallBehavior : MonoBehaviour {
 				if(transform.position.y > originPos){
 					yield return new WaitForSeconds (2f);
 					upOrDown = false;
+					gameObject.GetComponent<AudioSource>().Play();
 				}
 			}
 			if(upOrDown == false){
@@ -28,6 +29,7 @@ public class WallBehavior : MonoBehaviour {
 				if(transform.position.y < originPos-.68){
 					yield return new WaitForSeconds (1f);
 					upOrDown = true;
+					gameObject.GetComponent<AudioSource>().Play();
 				}
 			}
 		}
