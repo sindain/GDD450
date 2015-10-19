@@ -18,6 +18,7 @@ public class stationaryTurretCode : MonoBehaviour
     bool canFire;
     public Transform EnemyBullet;
     GameObject player;
+    GameObject bullet;
     float life;
     float blink;
     bool isDying;
@@ -83,7 +84,7 @@ public class stationaryTurretCode : MonoBehaviour
         {
 
 
-            if (fireCoolDown > 1)
+            if (fireCoolDown > .5)
             {
                 canFire = true;
 
