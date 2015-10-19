@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class StartButtonScript : MonoBehaviour {
+public class Lvl3ButScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -11,10 +11,5 @@ public class StartButtonScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-	}
-	public void Transition(){
-		UIHandler.lose=false;
-		Time.timeScale =1;
-		Application.LoadLevel ("LvlSelect");
 	}
 }
