@@ -4,7 +4,6 @@ using System.Collections;
 public class LvlDisplay : MonoBehaviour {
 	public static GameObject Old;
 	public static GameObject New;
-	private
 	// Use this for initialization
 	void Start () {
 	
@@ -12,5 +11,6 @@ public class LvlDisplay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		New.transform.Rotate (new Vector3 (0, 50, 0) * Time.deltaTime);
 	}
 }

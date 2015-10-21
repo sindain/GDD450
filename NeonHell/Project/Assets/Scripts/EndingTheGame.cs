@@ -8,8 +8,8 @@ public class EndingTheGame : MonoBehaviour {
 		if (other.gameObject.tag == "Player") {
 			//Application.LoadLevel (Application.loadedLevel);
 			//UIHandler.lose=true;
-			Destroy (other.gameObject);
-			Instantiate(particle,other.gameObject.transform.position,other.gameObject.transform.rotation);
+			//Destroy (other.gameObject);
+			//Instantiate(particle,other.gameObject.transform.position,other.gameObject.transform.rotation);
 			UIHandler.lose = true;
 			Rotate.isRotate=false;
 			UIH.TakeDamage(UIH.currentHealth);
