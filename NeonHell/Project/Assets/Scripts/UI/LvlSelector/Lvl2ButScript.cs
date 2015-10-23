@@ -17,7 +17,13 @@ public class Lvl2ButScript : MonoBehaviour {
 		LvlDisplay.Old = LvlDisplay.New;
 		LvlDisplay.New = Map;
 		LvlDisplay.New.SetActive (true);
-		LvlDisplay.Old.SetActive (false);
+		if (LvlDisplay.Old != null) 
+		{
+			if(LvlDisplay.Old!=LvlDisplay.New)
+			{
+				LvlDisplay.Old.SetActive (false);
+			}
+		}
 		ReadyButtScript.lvlName="Game";
 	}
 }
