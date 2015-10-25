@@ -31,7 +31,7 @@ public class EnemyBehavior : MonoBehaviour
         myRender=GetComponent<Renderer>();
         anim = GetComponent<Animator>();
         canFire = true;
-        player = GameObject.Find("Player");
+        player = GameObject.Find("RPlayer");
         target = player.transform;
         life = 0;
        

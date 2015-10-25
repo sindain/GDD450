@@ -29,7 +29,7 @@ public class bulletScript : MonoBehaviour {
     }
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "Player") 
+		if (other.gameObject.tag == "RPlayer") 
 		{
 			UIH.TakeDamage (1);
 			Destroy(gameObject);

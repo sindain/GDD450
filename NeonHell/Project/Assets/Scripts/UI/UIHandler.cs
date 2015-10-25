@@ -27,7 +27,7 @@ public class UIHandler : MonoBehaviour
 	public GameObject player;
 	public Text lapCount;
  	public RectTransform healthTransform;
-	public int startingHealth = 4;
+	public int startingHealth = 8;
 	public int currentHealth;
 	public float maxHealth;
 	public Image visualHealth;
@@ -50,7 +50,7 @@ public class UIHandler : MonoBehaviour
 	void Start () 
 	{
 		lap = 0;
-		startingHealth = 4;
+		startingHealth = 8;
 		lose = false;
 		win= false;
 		currentHealth = startingHealth;

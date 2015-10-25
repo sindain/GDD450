@@ -29,7 +29,7 @@ public class stationaryTurretCode : MonoBehaviour
         canFire = true;
        turretAngle= Random.Range(0.0f,100.0f);
         setRotation();
-        player = GameObject.Find("Player");
+        player = GameObject.Find("RPlayer");
         target = player.transform;
         life = 0.0f;
         isDying = false;
