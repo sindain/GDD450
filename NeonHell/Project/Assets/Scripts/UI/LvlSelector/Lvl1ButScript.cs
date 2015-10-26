@@ -24,6 +24,6 @@ public class Lvl1ButScript : MonoBehaviour {
 				LvlDisplay.Old.SetActive (false);
 			}
 		}
-		ReadyButtScript.lvlName="Main";
+		ReadyButtScript.lvlName="Track2";
 	}
 }
