@@ -1,19 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:NeonHell/Project/Assets/Prefabs/track_tile/straight_long.fbx.meta
-<<<<<<< HEAD
-guid: a8345495a743e1d428c9cbd9d784b35d
-timeCreated: 1445817555
-licenseType: Free
-=======
 guid: b37ee2a90faa353409689a05b674120e
-timeCreated: 1445813168
->>>>>>> refs/remotes/origin/Stage
-=======
-guid: fb7315a6d0e012043bc93fde8a40e654
-timeCreated: 1445630762
->>>>>>> origin/Stage:NeonHell/Project/Assets/Prefabs/track_tile/straight_long.fbx.meta
-licenseType: Pro
->>>>>>> refs/remotes/origin/Stage:NeonHell/Project/Assets/Prefabs/track_tile/straight_long.fbx.meta
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -60,7 +46,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1

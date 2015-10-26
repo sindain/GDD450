@@ -1,13 +1,7 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 0c6781afee70e8648b80efd09219b31e
-timeCreated: 1445817553
-licenseType: Free
-=======
 guid: d3a12b1417503f3408ceb651622ce6ec
 timeCreated: 1445813168
 licenseType: Pro
->>>>>>> refs/remotes/origin/Stage
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:

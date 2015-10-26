@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 108fea2916ed63741a351e0a7726a7af
-timeCreated: 1445813163
+guid: 6bb25d167b1c8b64a9991981866f9e82
+timeCreated: 1445630762
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: curve1
+    4300000: leftturn
     9500000: //RootNode
   materials:
     importMaterials: 1
