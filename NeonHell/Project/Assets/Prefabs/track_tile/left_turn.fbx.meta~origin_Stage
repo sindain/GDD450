@@ -1,34 +1,15 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:NeonHell/Project/Assets/Prefabs/track_tile/straight_short.fbx.meta
-guid: b65057893a0166f49b03747554af7dfa
-timeCreated: 1445813168
-=======
-guid: 03d94f2ca7690ce4db12f4e6806abb8b
-timeCreated: 1445630761
->>>>>>> origin/Stage:NeonHell/Project/Assets/Prefabs/track_tile/straight_short.fbx.meta
+guid: 6bb25d167b1c8b64a9991981866f9e82
+timeCreated: 1445630762
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: polySurface6
-    100002: polySurface6 1
-    100004: polySurface7
-    100006: straight_long2:polySurface4
-    100008: //RootNode
-    100010: transform7
-    100012: transform8
-    100014: transform9
-    400000: polySurface6
-    400002: polySurface6 1
-    400004: polySurface7
-    400006: straight_long2:polySurface4
-    400008: //RootNode
-    400010: transform7
-    400012: transform8
-    400014: transform9
-    2300000: polySurface6
-    3300000: polySurface6
-    4300000: polySurface6
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: leftturn
     9500000: //RootNode
   materials:
     importMaterials: 1
