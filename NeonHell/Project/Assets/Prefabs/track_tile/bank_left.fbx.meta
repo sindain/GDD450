@@ -1,7 +1,7 @@
 fileFormatVersion: 2
-guid: f0cff0851eeebb743bdf0b3337facb76
-timeCreated: 1445625385
-licenseType: Pro
+guid: debfa6b479b66d44ea49035ed290d1f9
+timeCreated: 1445817555
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface5
+    4300000: curve1
     9500000: //RootNode
   materials:
     importMaterials: 1
