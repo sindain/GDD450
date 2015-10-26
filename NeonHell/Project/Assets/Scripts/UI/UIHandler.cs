@@ -19,6 +19,7 @@ public class UIHandler : MonoBehaviour
 	//used to get other variables form other scripts
 	//objectWithOtherScript.GetComponent.< script1 >().someVariable = someNumber;
 	public GameObject pauseMenu;
+	public GameObject particle;
 	public GameObject lapPoint;
 	public GameObject hud;
 	public GameObject loseScreen;
@@ -26,7 +27,7 @@ public class UIHandler : MonoBehaviour
 	public GameObject player;
 	public Text lapCount;
  	public RectTransform healthTransform;
-	public int startingHealth = 4;
+	public int startingHealth = 8;
 	public int currentHealth;
 	public float maxHealth;
 	public Image visualHealth;
@@ -40,6 +41,7 @@ public class UIHandler : MonoBehaviour
 	private float timeLimit = 10;
 	private float delay = 2;
 	private float deathDelay=1;
+	private bool noExplode= true;
 
 	
 	bool isPause = false;
@@ -48,7 +50,7 @@ public class UIHandler : MonoBehaviour
 	void Start () 
 	{
 		lap = 0;
-		startingHealth = 4;
+		startingHealth = 8;
 		lose = false;
 		win= false;
 		currentHealth = startingHealth;
@@ -62,17 +64,20 @@ public class UIHandler : MonoBehaviour
         if( Input.GetKeyDown(KeyCode.Escape))
         {
             isPause = !isPause;
-            if(isPause)
+			if(!lose)
 			{
-            	Time.timeScale =0;
-				pauseMenu.SetActive(true);
-				hud.SetActive(false);
-			}
-            else
-			{
-            	Time.timeScale =1;
-				pauseMenu.SetActive(false);
-				hud.SetActive(true);
+				if(isPause)
+				{
+	            	Time.timeScale =0;
+					pauseMenu.SetActive(true);
+					hud.SetActive(false);
+				}
+	            else
+				{
+	            	Time.timeScale =1;
+					pauseMenu.SetActive(false);
+					hud.SetActive(true);
+				}
 			}
         }
 		if (Input.GetKeyDown (KeyCode.H))
@@ -90,13 +95,20 @@ public class UIHandler : MonoBehaviour
 				Application.LoadLevel("Credits");
 			}
 		}
+		else if(lose && noExplode)
+		{
+			Instantiate(particle,player.transform.position,player.transform.rotation);
+			Destroy(player.gameObject);
+			noExplode=false;
+		}
 		else if(lose)
 		{
 			deathDelay -= Time.deltaTime;
-			if ( deathDelay < 0 )
+			Rotate.isRotate=false;
+
+			if(deathDelay<=0)
 			{
 				loseScreen.SetActive(true);
-				Destroy(player.gameObject);
 				Time.timeScale =0;
 				hud.SetActive(false);
 			}

@@ -5,7 +5,7 @@ public class FinishLineScript : MonoBehaviour {
 	public UIHandler UIH;
 
 	void OnTriggerExit(Collider other){
-		if (other.gameObject.tag == "Player") {
+		if (other.gameObject.tag == "RPlayer") {
 			UIH.lap++;
 			UIH.HandleLap();
 		}

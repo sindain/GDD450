@@ -15,6 +15,6 @@ public class StartButtonScript : MonoBehaviour {
 	public void Transition(){
 		UIHandler.lose=false;
 		Time.timeScale =1;
-		Application.LoadLevel ("Main");
+		Application.LoadLevel ("LvlSelect");
 	}
 }
