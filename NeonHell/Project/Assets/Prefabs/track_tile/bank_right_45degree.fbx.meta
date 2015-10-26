@@ -1,29 +1,15 @@
 fileFormatVersion: 2
-guid: dd3b868f2bbae5b439772120a4b03715
-timeCreated: 1445625384
+guid: 108fea2916ed63741a351e0a7726a7af
+timeCreated: 1445813163
 licenseType: Pro
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: polySurface3
-    100002: polySurface4
-    100004: polySurface4_ncl1_1
-    100006: //RootNode
-    100008: straight_long_pCube5
-    100010: transform4
-    100012: transform5
-    100014: transform6
-    400000: polySurface3
-    400002: polySurface4
-    400004: polySurface4_ncl1_1
-    400006: //RootNode
-    400008: straight_long_pCube5
-    400010: transform4
-    400012: transform5
-    400014: transform6
-    2300000: polySurface4_ncl1_1
-    3300000: polySurface4_ncl1_1
-    4300000: polySurface4_ncl1_1
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: curve1
     9500000: //RootNode
   materials:
     importMaterials: 1
