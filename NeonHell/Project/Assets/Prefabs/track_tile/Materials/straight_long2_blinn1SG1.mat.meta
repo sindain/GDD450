@@ -1,11 +1,17 @@
 fileFormatVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 guid: b71cf19bf829fa34d9ec68903f3aa818
 timeCreated: 1445817553
 licenseType: Free
 =======
+guid: 1fffec9d8b7be44478d10e81c3f40d3c
+timeCreated: 1445813163
+>>>>>>> refs/remotes/origin/Stage
+=======
 guid: fca62ce7bf89a1145b3ebcda3facb77f
 timeCreated: 1445630761
+>>>>>>> origin/Stage
 licenseType: Pro
 >>>>>>> refs/remotes/origin/Stage
 NativeFormatImporter:

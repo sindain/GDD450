@@ -1,11 +1,17 @@
 fileFormatVersion: 2
 <<<<<<< HEAD:NeonHell/Project/Assets/Prefabs/track_tile/straight_short.fbx.meta
+<<<<<<< HEAD
 guid: bcbe638ce58412e4ea0e937eeaf1e075
 timeCreated: 1445817555
 licenseType: Free
 =======
+guid: b65057893a0166f49b03747554af7dfa
+timeCreated: 1445813168
+>>>>>>> refs/remotes/origin/Stage
+=======
 guid: 03d94f2ca7690ce4db12f4e6806abb8b
 timeCreated: 1445630761
+>>>>>>> origin/Stage:NeonHell/Project/Assets/Prefabs/track_tile/straight_short.fbx.meta
 licenseType: Pro
 >>>>>>> refs/remotes/origin/Stage:NeonHell/Project/Assets/Prefabs/track_tile/straight_short.fbx.meta
 ModelImporter:
