@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 0d031aa133a8a774dad82e31f5cbc22a
+timeCreated: 1445817552
+licenseType: Free
+=======
 guid: 1781b2240a20c614fbe83c926189dd14
 timeCreated: 1445813152
 licenseType: Pro
+>>>>>>> refs/remotes/origin/Stage
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2

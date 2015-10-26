@@ -7,7 +7,6 @@ public class PlayerController1 : MonoBehaviour {
 	public float rotationRate;
 	public float strafeAcceleration;
 	public float jumpStrength;
-
 	public float turnRotationAngle;
 	public float turnRotationSeekSpeed;
 
@@ -49,4 +48,5 @@ public class PlayerController1 : MonoBehaviour {
 		turnTorque = turnTorque * Time.deltaTime * rb.mass;
 		rb.AddTorque(turnTorque);
 	}
+
 }
