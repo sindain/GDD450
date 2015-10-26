@@ -33,7 +33,7 @@ public class PlayerController1 : MonoBehaviour {
 			Vector3 forwardForce = transform.forward * maxVelocity * 50.0f * Input.GetAxis ("Vertical");
 			forwardForce = forwardForce * Time.deltaTime * rb.mass;
 			rb.AddForce (forwardForce);
-			//rb.AddRelativeForce (Input.GetAxis ("Strafe") * new Vector3 (strafeAcceleration, 0.0f, 0.0f) * Time.deltaTime * rb.mass);
+			//rb.AddRelativeForce (Input.GetAxis ("Strafe") * new Vector3 (strafeAcceleration, 0.0f, 0.0f) * Time.deltaTime * rb.mass); //things
 			//if ((transform.rotation * rb.velocity).z < minVelocity)
 				//rb.AddRelativeForce (new Vector3 (0.0f, 0.0f, minVelocity * rb.drag * 50 * Time.deltaTime * rb.mass));
 		} else {
