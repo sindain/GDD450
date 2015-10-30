@@ -24,11 +24,11 @@ public class LevelSelect : NetworkBehaviour {
     void OnGUI(){
         if(levelSelector){
 
-            if (GUI.Button(new Rect(Screen.width/1.5f, 15, Screen.width / 10, Screen.height / 20), "Game Track")){
-                network.GetComponent<NetworkLobbyManager>().playScene = "Game";
+            if (GUI.Button(new Rect(Screen.width/1.5f, 15, Screen.width / 10, Screen.height / 20), "Figure 8")){
+                network.GetComponent<NetworkLobbyManager>().playScene = "Figure 8";
             }
-            if (GUI.Button(new Rect(Screen.width / 1.5f, 50, Screen.width / 10, Screen.height / 20), "Track 2")){
-                network.GetComponent<NetworkLobbyManager>().playScene = "Track2";
+            if (GUI.Button(new Rect(Screen.width / 1.5f, 50, Screen.width / 10, Screen.height / 20), "T-track")){
+                network.GetComponent<NetworkLobbyManager>().playScene = "Ttrack";
             }        
 
         }

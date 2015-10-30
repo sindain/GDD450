@@ -16,5 +16,10 @@ public class IsLocal : NetworkBehaviour {
             ship.GetComponent<PlayerController1>().canMove = true;
             shipCam.GetComponent<NetworkedCameraScript>().canRender = true;
         }
+        if (PlayerPrefs.GetFloat("multi") == 0)
+        {
+            ship.GetComponent<PlayerController1>().canMove = true;
+            shipCam.GetComponent<NetworkedCameraScript>().canRender = true;
+        }
 	}
 }
