@@ -31,8 +31,8 @@ public class PlayerController1 : NetworkBehaviour {
 
     void FixedUpdate()
     {
-        if (!(canMove && PlayerPrefs.GetFloat ("start") == 1))
-			return;
+        //if (!(canMove && PlayerPrefs.GetFloat ("start") == 1))
+		//	return;
 
         Vector3 newRotation;
         print(rb.velocity.magnitude);
