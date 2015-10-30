@@ -7,11 +7,14 @@ public class NPCController : MonoBehaviour {
 	public float fTurnSpeed = 30;
 	public float maxVelocity = 50.0f;
 
-	public GameObject currentPoint;
+	private GameObject currentPoint;
+	private int lap = 1;
 	private Rigidbody rb;
 	private GameObject direction;
 	private int iAccelDir = 0;
 	private float rotationVelocity;
+	private bool canMove;
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
@@ -26,6 +29,8 @@ public class NPCController : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
+
+
 		//Update the direction that the NPC needs to go
 		direction.transform.position = transform.position;
 		direction.transform.eulerAngles = transform.eulerAngles;
@@ -65,8 +70,22 @@ public class NPCController : MonoBehaviour {
 	}
 
 	public void nextPoint(){
+		//If we hit the finish line, increment laps and such
+		if (currentPoint.GetComponent<WaypointController> ().getNextPoint ().Equals (trackWaypoints.transform.GetChild (0).GetComponent<WaypointController> ().getPoint ())) {
+			lap ++;
+			if(lap >= 2)
+				canMove = false;
+		} // End if (currentPoint.GetComponent ...
 		currentPoint = currentPoint.GetComponent<WaypointController> ().getNextPoint ();
-	}
+	} //End public void nextPoint()
+	
+	public int getLap(){
+		return lap;
+	} //End public int getLap()
+	
+	public void setLap(int pLap){
+		lap = pLap;
+	} // End public void setLap(int pLap)
 
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Waypoint" && other.gameObject.Equals(currentPoint.GetComponent<WaypointController> ().getNextPoint ())) {
