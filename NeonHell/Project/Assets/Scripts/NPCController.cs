@@ -29,7 +29,8 @@ public class NPCController : MonoBehaviour {
 	}
 
 	void FixedUpdate(){
-
+        if (PlayerPrefs.GetFloat("start") != 1)
+            return;
 
 		//Update the direction that the NPC needs to go
 		direction.transform.position = transform.position;
