@@ -16,7 +16,10 @@ public class KillPlaneScript : MonoBehaviour {
 	{
 		if (col.tag == "Player") {
 			col.transform.position= new Vector3(0,10,0);
+			col.transform.rotation= new Quaternion(0,0,0,0);
 			col.attachedRigidbody.velocity = Vector3.zero;
+			col.attachedRigidbody.angularVelocity = Vector3.zero;
+
 		}
 	}
 }
