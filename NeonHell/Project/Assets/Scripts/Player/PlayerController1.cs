@@ -36,8 +36,8 @@ public class PlayerController1 : NetworkBehaviour {
 
     void FixedUpdate()
     {
-        //if (!(canMove && PlayerPrefs.GetFloat ("start") == 1))
-		//	return;
+        if (!(canMove && PlayerPrefs.GetFloat ("start") == 1))
+			return;
 
 		//Vector help keep the ship upright
         Vector3 newRotation;
