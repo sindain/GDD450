@@ -24,6 +24,7 @@ public class PlayerController1 : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        trackWaypoints = GameObject.FindWithTag("WList");
 		currentPoint = trackWaypoints.transform.GetChild (0).GetComponent<WaypointController> ().getPoint();
 		rb = GetComponent<Rigidbody> ();
         canMove = false;
