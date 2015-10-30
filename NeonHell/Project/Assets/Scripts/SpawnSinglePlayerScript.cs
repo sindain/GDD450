@@ -5,7 +5,10 @@ public class SpawnSinglePlayerScript : MonoBehaviour {
 	public GameObject Player1;
 	// Use this for initialization
 	void Start () {
-		Instantiate (Player1, gameObject.transform.position, gameObject.transform.rotation);
+        if (PlayerPrefs.GetFloat("multi") == 0)
+        {
+            Instantiate(Player1, gameObject.transform.position, gameObject.transform.rotation);
+        }
 	
 	}
 	
