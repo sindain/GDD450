@@ -16,7 +16,7 @@ public class PlayerController1 : NetworkBehaviour {
 	public bool canMove;
 
 	//Private variables
-	private int lap = 1;
+	private int lap = 0;
 	private float rotationVelocity;
 	private float groundAngleVelocity;
 	private GameObject currentPoint;
@@ -24,6 +24,9 @@ public class PlayerController1 : NetworkBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        
+        lap = 0;
+		PlayerPrefs.SetInt ("laps", 0);
         trackWaypoints = GameObject.FindWithTag("WList");
 		currentPoint = trackWaypoints.transform.GetChild (0).GetComponent<WaypointController> ().getPoint();
 		rb = GetComponent<Rigidbody> ();
@@ -37,7 +40,8 @@ public class PlayerController1 : NetworkBehaviour {
 
     void FixedUpdate()
     {
-        if (!(canMove && PlayerPrefs.GetFloat ("start") == 1))
+        
+		if (!(canMove && PlayerPrefs.GetFloat ("start") == 1) || lap >=2)
 			return;
 
 		//Vector help keep the ship upright
@@ -91,7 +95,17 @@ public class PlayerController1 : NetworkBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Waypoint" && other.gameObject.Equals(currentPoint.GetComponent<WaypointController> ().getNextPoint ()))
 			nextPoint ();
+		if (other.tag == "KillPlane") {
+			transform.position= new Vector3(currentPoint.transform.position.x,currentPoint.transform.position.y,currentPoint.transform.position.z);
+			transform.rotation= new Quaternion(currentPoint.transform.rotation.x,currentPoint.transform.rotation.y,currentPoint.transform.rotation.z,currentPoint.transform.rotation.w);
+			gameObject.GetComponent<Rigidbody>().velocity=Vector3.zero;
+			gameObject.GetComponent<Rigidbody>().angularVelocity=Vector3.zero;
+		}
 	} // End void OnTriggerEnter(Collider other)
+	public GameObject getCurrentPoint()
+	{
+		return currentPoint;
+	}
 	
     
 }

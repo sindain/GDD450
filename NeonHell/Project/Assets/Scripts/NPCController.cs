@@ -17,6 +17,7 @@ public class NPCController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		trackWaypoints = GameObject.FindWithTag("WList");
 		rb = GetComponent<Rigidbody> ();
 		currentPoint = trackWaypoints.transform.GetChild (0).GetComponent<WaypointController> ().getPoint();
 		direction = new GameObject();
@@ -91,6 +92,12 @@ public class NPCController : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		if (other.tag == "Waypoint" && other.gameObject.Equals(currentPoint.GetComponent<WaypointController> ().getNextPoint ())) {
 			nextPoint ();
+		}
+		if (other.tag == "KillPlane") {
+			transform.position= new Vector3(currentPoint.transform.position.x,currentPoint.transform.position.y,currentPoint.transform.position.z);
+			transform.rotation= new Quaternion(currentPoint.transform.rotation.x,currentPoint.transform.rotation.y,currentPoint.transform.rotation.z,currentPoint.transform.rotation.w);
+			gameObject.GetComponent<Rigidbody>().velocity=Vector3.zero;
+			gameObject.GetComponent<Rigidbody>().angularVelocity=Vector3.zero;
 		}
 	}
 }

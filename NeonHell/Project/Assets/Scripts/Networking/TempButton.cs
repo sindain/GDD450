@@ -17,7 +17,7 @@ public class TempButton : MonoBehaviour {
     {
         if (GUI.Button(new Rect(15, 15, Screen.width / 10, Screen.height / 20), "Multiplayer Lobby"))
         {
-            Application.LoadLevel(6);
+            Application.LoadLevel("lobbyScene");
         }
     }
 }

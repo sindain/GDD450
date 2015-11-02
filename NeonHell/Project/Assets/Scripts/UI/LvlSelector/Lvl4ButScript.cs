@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-public class Lvl2ButScript : MonoBehaviour {
+public class Lvl4ButScript : MonoBehaviour {
 	public GameObject Map;
 	public Text Desc;
 	// Use this for initialization
@@ -25,7 +25,8 @@ public class Lvl2ButScript : MonoBehaviour {
 				LvlDisplay.Old.SetActive (false);
 			}
 		}
-		ReadyButtScript.lvlName="Track2";
-		Desc.text = "L-Track: This track is to test the inclines and the declines of the track.";
+		ReadyButtScript.lvlName="ramping track";
+		Desc.text = "Springen: This track is to test the jumps. and the Multiplayer";
+
 	}
 }

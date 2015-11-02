@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 public class Lvl1ButScript : MonoBehaviour {
 	public GameObject Map;
+	public Text Desc;
 	// Use this for initialization
 	void Start () {
 	
@@ -24,6 +25,7 @@ public class Lvl1ButScript : MonoBehaviour {
 				LvlDisplay.Old.SetActive (false);
 			}
 		}
-		ReadyButtScript.lvlName="Track2";
+		ReadyButtScript.lvlName="Ttrack";
+		Desc.text = "T-Track: This track is to test the basic movement of the ship.";
 	}
 }
