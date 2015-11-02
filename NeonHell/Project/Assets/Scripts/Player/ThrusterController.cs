@@ -28,6 +28,7 @@ public class ThrusterController : MonoBehaviour {
 			float distancePercentage;
 
 			if(Physics.Raycast (i.position, -i.up, out hit, thrustDistance)){
+				if(hit.collider.isTrigger)return;
 				distancePercentage = 1-(hit.distance/thrustDistance);
 				downardForce = transform.up * thrustStrength * distancePercentage;
 				downardForce = downardForce * Time.deltaTime * rb.mass;
