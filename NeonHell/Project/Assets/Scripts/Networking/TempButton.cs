@@ -13,6 +13,10 @@ public class TempButton : MonoBehaviour {
 	
 	}
 
+    /*Just a temporary button to get to the multiplayer lobby
+     * Uses standard UI for button texture
+     */
+    
     void OnGUI()
     {
         if (GUI.Button(new Rect(15, 15, Screen.width / 10, Screen.height / 20), "Multiplayer Lobby"))
