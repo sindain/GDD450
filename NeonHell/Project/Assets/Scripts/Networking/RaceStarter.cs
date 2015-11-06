@@ -3,23 +3,21 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 public class RaceStarter : NetworkBehaviour {
-    public GameObject player;
-    public Text start;
-	public Text laps;
-    public Image menu;
-    public int timeStart;
-    public float timer;
-    private bool finished;
-    private int placed;
-    public GameObject placeCounter;
-
-    public int place;
+    public GameObject player; //Local Player Object
+    public Text start; // The countdown text
+	public Text laps; // The lap counter text
+    public Image menu; // The button that allows you you to go to the menu if you press escape
+    public float timer; // The timer for the countdown
+    private bool finished; // The boolean keeping track if the player has finished the race
+    private int placed; // Boolean keeping track if the player has been placed
+    public GameObject placeCounter; // The networked object holding the placing counter
+    public int place; // Local variable for the local players place
 	// Use this for initialization
 	void Start () {
+        //Initialize all variables to their starting positions
         placed = 0;
         place = 0;
         placeCounter = GameObject.FindWithTag("placeCounter");
-        //PlayerPrefs.SetInt("place", 0);
         player.GetComponent<PlayerController1>().setLap(0);
         finished = false;
         start.color = Color.red;
@@ -30,24 +28,29 @@ public class RaceStarter : NetworkBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        //Hide/Shows the menu button
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             menu.enabled = !menu.enabled;
         }
-        print("Placed: " + placed);
-        print("Place Counter: " + placeCounter.GetComponent<PlaceCounter>().placeCounter);
-        print("indi place: " + place);
+        //Checking if the local player has finished the race
         if (finished == false && player.GetComponent<PlayerController1>().getLap() >= 2)
         {
+            //Incrementing the server place counter variable
             placeCounter.GetComponent<PlaceCounter>().placeCounter = placeCounter.GetComponent<PlaceCounter>().placeCounter + 1;
+            //finishing the player
             finished = true;
         }
+        //Constant check for the servers place counter
         place = placeCounter.GetComponent<PlaceCounter>().placeCounter;
+        
+        //Check for isLocalPlayer or for SinglePlayer
         if (player.GetComponent<PlayerController1>().canMove || PlayerPrefs.GetFloat("multi") == 0)
         {
-
+            //Update the lap text
             laps.text = "Laps: " + player.GetComponent<PlayerController1>().getLap() + "/2";
+            
+            //The coundown timer text updating
             if (timer < 5)
             {
                 timer += Time.deltaTime;
@@ -75,6 +78,8 @@ public class RaceStarter : NetworkBehaviour {
                 start.text = "GO!";
                 PlayerPrefs.SetFloat("start", 1);
             }
+
+            //Places the player according to the server variable placeCounter
             if (player.GetComponent<PlayerController1>().getLap() >= 2)
             {
                 if (place == 1 && placed == 0)
@@ -103,13 +108,14 @@ public class RaceStarter : NetworkBehaviour {
                     placed = 1;
                     start.enabled = true;
                     start.color = Color.red;
-                    start.text = "4th Place :(";
+                    start.text = "4th Place :(";  
                 }
 
                 menu.enabled = true;
                 //end the race somehow
             }
         }
+        //This else statement turns off all gui that isnt the local players
         else
         {
             menu.enabled = false;
