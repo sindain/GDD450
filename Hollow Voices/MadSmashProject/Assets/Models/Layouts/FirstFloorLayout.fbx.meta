@@ -1,0 +1,202 @@
+fileFormatVersion: 2
+guid: 7b472663554490e479eaac2f30ab356a
+timeCreated: 1446234384
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: corner
+    100002: cornerRoom
+    100004: cornerRoom 1
+    100006: Courtyard
+    100008: doorway10
+    100010: doorway2
+    100012: doorway3
+    100014: doorway4
+    100016: doorway5
+    100018: doorway6
+    100020: doorway7
+    100022: doorway8
+    100024: doorway9
+    100026: //RootNode
+    100028: FourRoom
+    100030: FourRoomLeft1
+    100032: HallStop
+    100034: HallStop2
+    100036: HallStop3
+    100038: HallStop4
+    100040: onebyone
+    100042: onebyone2
+    100044: onebytwo
+    100046: OnebyTwo2
+    100048: onecorner
+    100050: transform1
+    100052: transform2
+    100054: transform3
+    100056: transform4
+    100058: twobyone
+    100060: wallcorner
+    100062: wallcorner2
+    400000: corner
+    400002: cornerRoom
+    400004: cornerRoom 1
+    400006: Courtyard
+    400008: doorway10
+    400010: doorway2
+    400012: doorway3
+    400014: doorway4
+    400016: doorway5
+    400018: doorway6
+    400020: doorway7
+    400022: doorway8
+    400024: doorway9
+    400026: //RootNode
+    400028: FourRoom
+    400030: FourRoomLeft1
+    400032: HallStop
+    400034: HallStop2
+    400036: HallStop3
+    400038: HallStop4
+    400040: onebyone
+    400042: onebyone2
+    400044: onebytwo
+    400046: OnebyTwo2
+    400048: onecorner
+    400050: transform1
+    400052: transform2
+    400054: transform3
+    400056: transform4
+    400058: twobyone
+    400060: wallcorner
+    400062: wallcorner2
+    2300000: cornerRoom
+    2300002: Courtyard
+    2300004: doorway10
+    2300006: doorway2
+    2300008: doorway3
+    2300010: doorway4
+    2300012: doorway5
+    2300014: doorway6
+    2300016: doorway7
+    2300018: doorway8
+    2300020: doorway9
+    2300022: FourRoom
+    2300024: FourRoomLeft1
+    2300026: HallStop
+    2300028: HallStop2
+    2300030: HallStop3
+    2300032: HallStop4
+    2300034: onebyone
+    2300036: onebyone2
+    2300038: onebytwo
+    2300040: OnebyTwo2
+    2300042: twobyone
+    3300000: cornerRoom
+    3300002: Courtyard
+    3300004: doorway10
+    3300006: doorway2
+    3300008: doorway3
+    3300010: doorway4
+    3300012: doorway5
+    3300014: doorway6
+    3300016: doorway7
+    3300018: doorway8
+    3300020: doorway9
+    3300022: FourRoom
+    3300024: FourRoomLeft1
+    3300026: HallStop
+    3300028: HallStop2
+    3300030: HallStop3
+    3300032: HallStop4
+    3300034: onebyone
+    3300036: onebyone2
+    3300038: onebytwo
+    3300040: OnebyTwo2
+    3300042: twobyone
+    4300000: doorway2
+    4300002: doorway3
+    4300004: doorway4
+    4300006: doorway5
+    4300008: twobyone
+    4300010: doorway6
+    4300012: onebyone
+    4300014: onebyone2
+    4300016: onebytwo
+    4300018: doorway7
+    4300020: doorway8
+    4300022: Courtyard
+    4300024: OnebyTwo2
+    4300026: FourRoom
+    4300028: doorway10
+    4300030: doorway9
+    4300032: HallStop4
+    4300034: HallStop3
+    4300036: HallStop2
+    4300038: HallStop
+    4300040: FourRoomLeft1
+    4300042: cornerRoom
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
