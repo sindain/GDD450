@@ -30,14 +30,14 @@ public class lootScriptGold : MonoBehaviour {
                     if(hit.collider.gameObject.name=="goldCoin"|| hit.collider.gameObject.name == "goldCoin(Clone)")
                     {
                         score++;
-						GameObject.FindGameObjectWithTag("HUD").GetComponent<HudScript>().addScore(1);
+						GameObject.FindWithTag("HUD").GetComponent<HudScript>().addScore(1);
                         Destroy(hit.collider.gameObject);
                         print(score);
                     }
                     else if (hit.collider.gameObject.name == "ingot" || hit.collider.gameObject.name == "ingot(Clone)")
                     {
                         score = score + 5;
-						GameObject.FindGameObjectWithTag("HUD").GetComponent<HudScript>().addScore(5);
+						GameObject.FindWithTag("HUD").GetComponent<HudScript>().addScore(5);
                         Destroy(hit.collider.gameObject);
                         print(score);
                     }
