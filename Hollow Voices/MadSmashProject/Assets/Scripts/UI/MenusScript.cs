@@ -8,7 +8,7 @@ public class MenusScript : MonoBehaviour {
 	
 	public void onStartClicked()
 	{
-		Application.LoadLevel("TestScene1");
+		Application.LoadLevel("LevelDesign1");
 	}
 	public void onControlsClicked()
 	{

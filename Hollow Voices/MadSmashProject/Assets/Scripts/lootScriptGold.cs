@@ -5,6 +5,8 @@ public class lootScriptGold : MonoBehaviour {
     public int score;
   public GameObject chest;
     private ChestLogic chestlogic;
+    public GameObject door;
+    private DoorWayScript doorwayscript;
 
     // Use this for initialization
     void Start ()
@@ -47,6 +49,14 @@ public class lootScriptGold : MonoBehaviour {
                         chestlogic = chest.GetComponent<ChestLogic>();
                         chestlogic.Looted = true;
                     }
+
+                }
+                if (hit.collider.gameObject.tag == "door")
+                {
+                    door = hit.collider.gameObject;
+                    doorwayscript = door.GetComponent<DoorWayScript>();
+                   doorwayscript.closed = false;
+                    print("ganstalife");
                 }
             }       
         }
