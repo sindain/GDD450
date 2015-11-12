@@ -1,3 +1,18 @@
+<<<<<<< .mine
+fileFormatVersion: 2
+guid: 8adea09259998c94785e818bd1429df3
+timeCreated: 1446951325
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+||||||| .r0
+=======
 fileFormatVersion: 2
 guid: 0170cb0d746c80947a3bf235daff55b5
 timeCreated: 1447094201
@@ -10,3 +25,4 @@ MonoImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+>>>>>>> .r239
