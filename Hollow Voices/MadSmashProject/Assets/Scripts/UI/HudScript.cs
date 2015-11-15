@@ -4,6 +4,9 @@ using UnityEngine.UI;
 public class HudScript : MonoBehaviour {
 	private int Score;
 	public Text lootCounter;
+	public Image Boost1;
+	public Image Boost2;
+	public Image Boost3;
 	// Use this for initialization
 	void Start () 
 	{
@@ -22,19 +25,21 @@ public class HudScript : MonoBehaviour {
 
 		if(Input.GetKeyUp(KeyCode.Alpha7))
 		{
-			GameObject.FindWithTag("HUD").GetComponent<HudScript>().AddBoost("Boost1");
+			GameObject.FindWithTag("HUD").GetComponent<HudScript>().Boost1State(true);
 		}
 		if(Input.GetKeyUp(KeyCode.Alpha8))
 		{
-			GameObject.FindWithTag("HUD").GetComponent<HudScript>().AddBoost("Boost2");
+			GameObject.FindWithTag("HUD").GetComponent<HudScript>().Boost2State(true);
 		}
 		if(Input.GetKeyUp(KeyCode.Alpha9))
 		{
-			GameObject.FindWithTag("HUD").GetComponent<HudScript>().AddBoost("Boost3");
+			GameObject.FindWithTag("HUD").GetComponent<HudScript>().Boost3State(true);
 		}
 		if(Input.GetKeyUp(KeyCode.Alpha0))
 		{
-			GameObject.FindWithTag("HUD").GetComponent<HudScript>().AddBoost("None");
+			GameObject.FindWithTag("HUD").GetComponent<HudScript>().Boost1State(false);
+			GameObject.FindWithTag("HUD").GetComponent<HudScript>().Boost2State(false);
+			GameObject.FindWithTag("HUD").GetComponent<HudScript>().Boost3State(false);
 		}
 
 
@@ -43,23 +48,39 @@ public class HudScript : MonoBehaviour {
 	{
 		Score = Score + amount;
 	}
-	public void AddBoost(string BoostType)
+	public void Boost1State(bool State)
 	{
-		if(BoostType == "Boost1")
+		if (State == true) 
 		{
-			gameObject.GetComponentInChildren<Image>().color = Color.red;
+			Boost1.color =new Color(255,0,0,255);
 		}
-		else if(BoostType == "Boost2")
+		if (State == false) 
 		{
-			gameObject.GetComponentInChildren<Image>().color = Color.green;
+			Boost1.color =new Color(255,0,0,.25f);
 		}
-		else if(BoostType == "Boost3")
+	}
+	public void Boost2State(bool State)
+	{
+		if (State == true) 
 		{
-			gameObject.GetComponentInChildren<Image>().color = Color.yellow;
+			Boost2.color =new Color(0,0,255,255);
 		}
-		else if(BoostType == "None")
+		if (State == false) 
 		{
-			gameObject.GetComponentInChildren<Image>().color = Color.white;
+			Boost2.color =new Color(0,0,255,.25f);
 		}
+		
+	}
+	public void Boost3State(bool State)
+	{
+		if (State == true) 
+		{
+			Boost3.color =new Color(0,255,0,255);
+		}
+		if (State == false) 
+		{
+			Boost3.color =new Color(0,255,0,.25f);
+		}
+		
 	}
 }
