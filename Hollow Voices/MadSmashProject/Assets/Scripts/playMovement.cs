@@ -7,9 +7,9 @@ public class playMovement : MonoBehaviour {
 
 	public float jumpHeight = 250f;
 
-	public float sensitivityX = 15f;
+	public float sensitivityX = 5f;
 
-	public float sensitivityY = 15f;
+	public float sensitivityY = 5f;
 
 	public Camera charCamera;
 
@@ -172,7 +172,7 @@ public class playMovement : MonoBehaviour {
 			anim.SetBool ("running", true);
 			speed = 5f;
 		}
-		else if (Input.GetKeyUp (KeyCode.LeftShift))
+		else if (Input.GetKeyUp (KeyCode.LeftShift)|| Input.GetKeyUp(KeyCode.W))
 		{
 			anim.SetBool ("running", false);
 			speed = 3f;
