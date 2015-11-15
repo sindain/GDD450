@@ -29,8 +29,7 @@ public class PlayerRaycast : MonoBehaviour {
             // if the mouse is down it will check for a collider of the object and then from the collider pull the game object and the tag then adds points based on tag and destroys object.
             if (Input.GetMouseButtonDown(0))
             {
-				print ("mouse");
-				switch(hit.collider.gameObject.name){
+				switch(hit.collider.gameObject.tag){
 				case "goldCoin":
 					collect(1,hit);
 					break;
@@ -38,24 +37,15 @@ public class PlayerRaycast : MonoBehaviour {
 					collect(5,hit);
 					break;
 				case "Safe":
-					print ("Safe");
 					// if the collider is tied to safe tagged game object it will change the bool "Looted" in "ChestLogic>" script to true to open the safe
 					 hit.collider.gameObject.GetComponent<ChestLogic>().Looted = true;
-					//chest=hit.collider.gameObject;
-					//chestlogic = chest.GetComponent<ChestLogic>();
-					//chestlogic.Looted = true;
+					break;
+				case"door":
+						hit.collider.gameObject.GetComponent<DoorWayScript>().StartAnime();
 					break;
 				default:
 					break;
 				} //End switch(hit.collider.gameObject.tag)
-            }
-            // if the collider is tied to a door tagged  game object it will change the "closed" bool in the "DoorWayScript" to false
-            else if (hit.collider.gameObject.tag == "door")
-            {
-                //door = hit.collider.gameObject;
-                //doorwayscript = door.GetComponent<DoorWayScript>();
-               	//doorwayscript.closed = false;
-                
             }
 		} //End if (Physics.Raycast(ray, out hit))   
     }//End void Update()
