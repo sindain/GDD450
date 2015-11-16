@@ -19,14 +19,15 @@ public class CharacterStats : MonoBehaviour {
 		iStrength = 5;
 		iDefense  = 5;
 		iStealth  = 5;
-		iLoot     = 200;
+		iLoot     = 0;
+		buffList = new List<Buff> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		//foreach (Buff buff in buffList) {
-      	//	buff.Update();
-    	//}
+		foreach (Buff buff in buffList) {
+      		buff.Update();
+    	}
 	}
 
 	//------------------------------------------------------------------------------------------------
