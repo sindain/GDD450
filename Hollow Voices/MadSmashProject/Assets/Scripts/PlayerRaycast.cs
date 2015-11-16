@@ -3,7 +3,6 @@ using System.Collections;
 
 public class PlayerRaycast : MonoBehaviour {
     // intializes the score and then sets up the script variables to be called so we can change them to call animations.
-    public int score;
 	public float fReachDistance = 2.0f;
 	private GameObject cam;
 
@@ -25,7 +24,7 @@ public class PlayerRaycast : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, fReachDistance))
 		{	
-			print ("true");
+			print(hit.collider.name);
             // if the mouse is down it will check for a collider of the object and then from the collider pull the game object and the tag then adds points based on tag and destroys object.
             if (Input.GetMouseButtonDown(0))
             {
@@ -53,11 +52,9 @@ public class PlayerRaycast : MonoBehaviour {
 	//TODO: enter function header
 	//Collects the object and increments score.
 	private void collect(int pPoints, RaycastHit pHit){
-		print (pPoints);
-		score += pPoints;
+		GetComponent<CharacterStats> ().adjLoot (pPoints);
 		GameObject.FindWithTag("HUD").GetComponent<HudScript>().addScore(pPoints);
 		Destroy(pHit.collider.gameObject);
-		print(score);
 	} //End private void collect(int pPoints, RaycastHit pHit)
 } //End public class lootScriptGold : MonoBehaviour
 
