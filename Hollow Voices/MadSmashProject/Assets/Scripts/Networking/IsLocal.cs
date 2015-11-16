@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.Networking;
 public class IsLocal : NetworkBehaviour {
 
-    public GameObject shipCam;
+    public GameObject player;
 	// Use this for initialization
 	void Start () {
         
@@ -13,11 +13,7 @@ public class IsLocal : NetworkBehaviour {
 	void Update () {
         if (isLocalPlayer)
         {
-            //shipCam.GetComponent<NetworkedCameraScript>().canRender = true;
-        }
-        if (PlayerPrefs.GetFloat("multi") == 0)
-        {
-            //shipCam.GetComponent<NetworkedCameraScript>().canRender = true;
+            player.GetComponent<SimpleMovement>().canMove = true;
         }
 	}
 }

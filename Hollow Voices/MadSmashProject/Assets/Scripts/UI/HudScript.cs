@@ -7,12 +7,14 @@ public class HudScript : MonoBehaviour {
 	public Image Boost1;
 	public Image Boost2;
 	public Image Boost3;
+    public float timer;
+    public Text timerT;
 	// Use this for initialization
 	void Start () 
 	{
 		Score = 0;
 		Cursor.lockState = CursorLockMode.Locked;
-
+        timer = 120;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +24,13 @@ public class HudScript : MonoBehaviour {
 		//Cursor.visible = false;
 		lootCounter.text = "Loot: " + Score;
 
+        timer -= Time.deltaTime;
 
+        timerT.text = "Time: " + timer;
+        if (timer <= 0)
+        {
+            Application.LoadLevel(0);
+        }
 		if(Input.GetKeyUp(KeyCode.Alpha7))
 		{
 			GameObject.FindWithTag("HUD").GetComponent<HudScript>().Boost1State(true);

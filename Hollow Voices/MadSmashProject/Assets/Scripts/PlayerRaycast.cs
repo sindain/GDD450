@@ -6,9 +6,6 @@ public class PlayerRaycast : MonoBehaviour {
 	public float fReachDistance = 2.0f;
 	private GameObject cam;
 
-    private ChestLogic chestlogic;
-    private DoorWayScript doorwayscript;
-
     // Use this for initialization
     void Start ()
     {

@@ -25,9 +25,9 @@ public class CharacterStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		foreach (Buff buff in buffList) {
-      		buff.Update();
-    	}
+		//foreach (Buff buff in buffList) {
+      	//	buff.Update();
+    	//}
 	}
 
 	//------------------------------------------------------------------------------------------------

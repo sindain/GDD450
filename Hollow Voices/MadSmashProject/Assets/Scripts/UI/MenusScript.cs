@@ -8,7 +8,8 @@ public class MenusScript : MonoBehaviour {
 	
 	public void onStartClicked()
 	{
-		Application.LoadLevel("LevelDesign1");
+        Application.LoadLevel("MultiplayerLobby");
+		//Application.LoadLevel("TestScene1");
 	}
 	public void onControlsClicked()
 	{
@@ -30,4 +31,11 @@ public class MenusScript : MonoBehaviour {
 		controlsMenu.SetActive (false);
 		titleMenu.SetActive (true);
 	}
+    void OnGUI()
+    {
+        /*if (GUI.Button(new Rect(15, 15, Screen.width / 10, Screen.height / 20), "Multiplayer Lobby"))
+        {
+            Application.LoadLevel("MultiplayerLobby");
+        }*/
+    }
 }
