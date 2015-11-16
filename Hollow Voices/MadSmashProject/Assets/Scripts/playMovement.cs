@@ -3,7 +3,7 @@ using System.Collections;
 
 public class playMovement : MonoBehaviour {
 
-	public float speed = 3f;
+	public float speed = 2.5f;
 
 	public float jumpHeight = 250f;
 
@@ -52,11 +52,11 @@ public class playMovement : MonoBehaviour {
 		vRotation.y = vRotation.y + Input.GetAxis ("Mouse X") * sensitivityX;
 		vRotation.x = Mathf.Clamp (vRotation.x + Input.GetAxis ("Mouse Y") * sensitivityY, -60.0f, 60.0f);
 		transform.localEulerAngles = new Vector3 (0, vRotation.y, 0);
-		charCamera.transform.localEulerAngles = new Vector3 (vRotation.x, 0, 0);
+		charCamera.transform.localEulerAngles = new Vector3 (-vRotation.x, 0, 0);
 
 		animating ();
 
-		jump ();
+		//jump ();
 
 
 
@@ -172,21 +172,22 @@ public class playMovement : MonoBehaviour {
 			anim.SetBool ("running", true);
 			speed = 5f;
 		}
-		else if (Input.GetKeyUp (KeyCode.LeftShift)|| Input.GetKeyUp(KeyCode.W))
+		else if (Input.GetKeyUp (KeyCode.LeftShift) || Input.GetKeyUp(KeyCode.W))
 		{
 			anim.SetBool ("running", false);
 			speed = 3f;
 		}
 
-		if (Input.GetKey(KeyCode.Space)) {
-
-			anim.SetBool ("jumping", true);
+		if (Input.GetKeyDown(KeyCode.Space)) 
+		{
+			playerBody.AddForce(transform.up*jumpHeight);
+			//anim.SetBool ("jumping", true);
 
 		} 
-		else 
-		{
-			anim.SetBool ("jumping", false);
-		}
+//		else 
+//		{
+//			anim.SetBool ("jumping", false);
+//		}
 	}
 
 	void OnCollisionStay()
@@ -198,16 +199,16 @@ public class playMovement : MonoBehaviour {
 
 	}
 
-	void jump()
-	{
-		if(Input.GetKeyDown(KeyCode.K))
-		{
-			
-			playerBody.AddForce(transform.up*jumpHeight);
-			
-			
-		}
-	}
+//	void jump()
+//	{
+//		if(Input.GetKeyDown(KeyCode.K))
+//		{
+//			
+//			playerBody.AddForce(transform.up*jumpHeight);
+//			
+//			
+//		}
+//	}
 
 
 }
