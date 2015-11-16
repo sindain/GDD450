@@ -24,9 +24,10 @@ public class CharacterStats : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		foreach (Buff buff in buffList) {
-      		buff.Update();
-    	}
+		takeDamage (6);
+		//foreach (Buff buff in buffList) {
+      	//	buff.Update();
+    	//}
 	}
 
 	//------------------------------------------------------------------------------------------------
@@ -43,6 +44,7 @@ public class CharacterStats : MonoBehaviour {
 
 		//Assign damage and determine amount of loot to drop
 		iLoot = iLoot - liTotalDamage;
+		GameObject.FindWithTag("HUD").GetComponent<HudScript>().addScore(-liTotalDamage);
 		liLootDrops [1] = liTotalDamage / 5;
 		liLootDrops [0] = liTotalDamage - liLootDrops[1] * 5;
 
@@ -52,7 +54,7 @@ public class CharacterStats : MonoBehaviour {
 				GameObject lLootDrop = Instantiate (lootDrop [i], 
 			                                    transform.position + new Vector3 (0, 1, 0), 
 			                                    transform.rotation) as GameObject;
-				lLootDrop.GetComponent<Rigidbody> ().AddForce (new Vector3 (0.0f, 150.0f, 0.0f));
+				lLootDrop.GetComponent<Rigidbody> ().AddForce (new Vector3 (0.0f, 200.0f, 0.0f));
 			} //End for (int j=0; i<liLootDrops[i]; j++)
 		} //End for(int i=0; i<2; i++)
 	} //End public void takeDamage(int piDamage)
