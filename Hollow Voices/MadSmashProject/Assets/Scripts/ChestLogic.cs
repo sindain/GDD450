@@ -7,12 +7,9 @@ public class ChestLogic : MonoBehaviour {
     public GameObject ingot;
     public bool Looted = false;
     public bool canLoot = true;
-    float v;
-    float h;
-    float x;
-    float y;
-    float z;
-    
+    public Rigidbody rb;
+    private Vector3 targetAngles;
+
     // Use this for initialization
     void Start()
     {
@@ -35,18 +32,30 @@ public class ChestLogic : MonoBehaviour {
     }       
     void spawnLoot()
     {
-        
+
+        StartCoroutine(DoAnimation());
        
-           int randomNumber= Random.Range(1, 5);
-        for (int i = 0; i < 4; i++)
+       
+    }
+    IEnumerator DoAnimation()
+    {
+        int randomNumber = Random.Range(1, 5);
+        yield return new WaitForSeconds(2f); // wait for two seconds.
+        for (int i = 0; i < randomNumber; i++)
         {
-            
-            Instantiate(coinPrefab, transform.position, transform.rotation);
+                 
            
+            Instantiate(coinPrefab, transform.position, transform.rotation);
+            rb = coinPrefab.GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * 10);
         }
-        if(randomNumber<3)
+
+
+        if (randomNumber < 3)
         {
             Instantiate(ingot, transform.position, transform.rotation);
         }
-    }
-}
+    }  
+  }
+
+
