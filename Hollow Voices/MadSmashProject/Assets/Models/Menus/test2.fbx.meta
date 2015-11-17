@@ -1,0 +1,225 @@
+fileFormatVersion: 2
+guid: 277b9b6a6421f2a43aca2e6ef9e9a58f
+timeCreated: 1447650036
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: back_bottom_bracers
+    100002: back_top_bracers
+    100004: book
+    100006: book1
+    100008: book2
+    100010: book3
+    100012: book4
+    100014: book_end
+    100016: books
+    100018: bottom_right_drawer
+    100020: bottom_tray
+    100022: bottome_left_drawer
+    100024: desk
+    100026: desk 1
+    100028: front_bottom_bracers
+    100030: front_top_bracers
+    100032: left
+    100034: left 1
+    100036: left 2
+    100038: left 3
+    100040: map
+    100042: map1
+    100044: mid_top
+    100046: middle_drawer
+    100048: middle_tray
+    100050: name_plague
+    100052: name_plague 1
+    100054: right
+    100056: right 1
+    100058: right 2
+    100060: right 3
+    100062: //RootNode
+    100064: top
+    100066: top_left_drawer
+    100068: top_right_drawer
+    100070: top_tray
+    100072: trays
+    400000: back_bottom_bracers
+    400002: back_top_bracers
+    400004: book
+    400006: book1
+    400008: book2
+    400010: book3
+    400012: book4
+    400014: book_end
+    400016: books
+    400018: bottom_right_drawer
+    400020: bottom_tray
+    400022: bottome_left_drawer
+    400024: desk
+    400026: desk 1
+    400028: front_bottom_bracers
+    400030: front_top_bracers
+    400032: left
+    400034: left 1
+    400036: left 2
+    400038: left 3
+    400040: map
+    400042: map1
+    400044: mid_top
+    400046: middle_drawer
+    400048: middle_tray
+    400050: name_plague
+    400052: name_plague 1
+    400054: right
+    400056: right 1
+    400058: right 2
+    400060: right 3
+    400062: //RootNode
+    400064: top
+    400066: top_left_drawer
+    400068: top_right_drawer
+    400070: top_tray
+    400072: trays
+    2300000: book
+    2300002: book1
+    2300004: book2
+    2300006: book3
+    2300008: book4
+    2300010: book_end
+    2300012: bottom_right_drawer
+    2300014: bottom_tray
+    2300016: bottome_left_drawer
+    2300018: desk 1
+    2300020: left
+    2300022: left 1
+    2300024: left 2
+    2300026: left 3
+    2300028: map
+    2300030: map1
+    2300032: middle_drawer
+    2300034: middle_tray
+    2300036: name_plague 1
+    2300038: right
+    2300040: right 1
+    2300042: right 2
+    2300044: right 3
+    2300046: top_left_drawer
+    2300048: top_right_drawer
+    2300050: top_tray
+    3300000: book
+    3300002: book1
+    3300004: book2
+    3300006: book3
+    3300008: book4
+    3300010: book_end
+    3300012: bottom_right_drawer
+    3300014: bottom_tray
+    3300016: bottome_left_drawer
+    3300018: desk 1
+    3300020: left
+    3300022: left 1
+    3300024: left 2
+    3300026: left 3
+    3300028: map
+    3300030: map1
+    3300032: middle_drawer
+    3300034: middle_tray
+    3300036: name_plague 1
+    3300038: right
+    3300040: right 1
+    3300042: right 2
+    3300044: right 3
+    3300046: top_left_drawer
+    3300048: top_right_drawer
+    3300050: top_tray
+    4300000: bottom_right_drawer
+    4300002: top_right_drawer
+    4300004: middle_drawer
+    4300006: bottome_left_drawer
+    4300008: top_left_drawer
+    4300010: desk
+    4300012: book
+    4300014: book_end
+    4300016: book1
+    4300018: book2
+    4300020: book3
+    4300022: book4
+    4300024: bottom_tray
+    4300026: right
+    4300028: left
+    4300030: left
+    4300032: right
+    4300034: middle_tray
+    4300036: left
+    4300038: right
+    4300040: right
+    4300042: left
+    4300044: top_tray
+    4300046: name_plague
+    4300048: map
+    4300050: map1
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
