@@ -1,0 +1,146 @@
+fileFormatVersion: 2
+guid: 0c0b19650be892e44910ebcfcc6799cb
+timeCreated: 1446857206
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: bigPillow1
+    100002: bigPillow2
+    100004: bigPillow3
+    100006: blanket
+    100008: footTubePillow
+    100010: frame
+    100012: headTubePillow
+    100014: //RootNode
+    100016: medPillow1
+    100018: medpillow2
+    100020: pillows
+    100022: smallPillow1
+    100024: smallPillow2
+    100026: smallPillow3
+    100028: smallPillow4
+    100030: topcover
+    400000: bigPillow1
+    400002: bigPillow2
+    400004: bigPillow3
+    400006: blanket
+    400008: footTubePillow
+    400010: frame
+    400012: headTubePillow
+    400014: //RootNode
+    400016: medPillow1
+    400018: medpillow2
+    400020: pillows
+    400022: smallPillow1
+    400024: smallPillow2
+    400026: smallPillow3
+    400028: smallPillow4
+    400030: topcover
+    2300000: bigPillow1
+    2300002: bigPillow2
+    2300004: bigPillow3
+    2300006: blanket
+    2300008: footTubePillow
+    2300010: frame
+    2300012: headTubePillow
+    2300014: medPillow1
+    2300016: medpillow2
+    2300018: smallPillow1
+    2300020: smallPillow2
+    2300022: smallPillow3
+    2300024: smallPillow4
+    2300026: topcover
+    3300000: bigPillow1
+    3300002: bigPillow2
+    3300004: bigPillow3
+    3300006: blanket
+    3300008: footTubePillow
+    3300010: frame
+    3300012: headTubePillow
+    3300014: medPillow1
+    3300016: medpillow2
+    3300018: smallPillow1
+    3300020: smallPillow2
+    3300022: smallPillow3
+    3300024: smallPillow4
+    3300026: topcover
+    4300000: bigPillow1
+    4300002: bigPillow2
+    4300004: bigPillow3
+    4300006: medPillow1
+    4300008: medpillow2
+    4300010: smallPillow1
+    4300012: smallPillow2
+    4300014: smallPillow3
+    4300016: smallPillow4
+    4300018: headTubePillow
+    4300020: footTubePillow
+    4300022: blanket
+    4300024: topcover
+    4300026: frame
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
